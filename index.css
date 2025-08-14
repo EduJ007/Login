@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff6600, #ff3300);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container do login */
+.login-container {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    border: 2px solid  black;
+
+}
+
+/* Título */
+.login-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+/* Inputs */
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+    margin-left:-10px;
+}
+
+.login-container input:focus {
+    border-color: #ff6600;
+    outline: none;
+}
+
+/* Botão */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background: #ff6600;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-container button:hover {
+    background: #e65c00;
+}
+
+/* Links */
+.links {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.links a {
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+    .login-container {
+        padding: 20px;
+    }
+}
